@@ -7,4 +7,5 @@ export abstract class UserGateway {
   abstract delete(id: string): Observable<Boolean>;
   abstract findById(id: string): Observable<User>;
   abstract findAll(): Observable<Array<User>>;
+  abstract login(email: string, password: string): Observable<Boolean>;
 }
