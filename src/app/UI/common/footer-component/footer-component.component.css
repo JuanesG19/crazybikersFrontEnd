@@ -1,10 +1,16 @@
 .footer {
-  background-color: #2f2f2f;
+  background: rgb(64, 64, 64);
+  background: linear-gradient(
+    152deg,
+    rgba(64, 64, 64, 1) 0%,
+    rgba(47, 47, 47, 1) 52%,
+    rgba(29, 29, 29, 1) 73%
+  );
 }
 
 .line {
   margin: 10px 0 20px 0;
-  border: 1px solid  white;
+  border: 1px solid white;
   border-radius: 10px;
 }
 
@@ -14,11 +20,11 @@
   color: white;
 }
 
-.sectionFooter p{
+.sectionFooter p {
   color: #808080;
 }
 
-.sectionFooter p:hover{
+.sectionFooter p:hover {
   color: white;
 }
 
