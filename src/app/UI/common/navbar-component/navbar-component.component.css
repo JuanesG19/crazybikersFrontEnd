@@ -1,1 +1,12 @@
-import {  }
+#navBar {
+    background-color: #2F2F2F;
+}
+.navbar-brand {
+    color: #FFFF;
+}
+
+.nav-link {
+    color: #FFFF;
+
+}
+
