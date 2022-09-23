@@ -13,10 +13,10 @@ export class FooterComponentComponent implements OnInit {
   twitterIcon: string;
 
   constructor() {
-    this.facebookIcon = '';
-    this.instagramIcon = '';
-    this.whatsappIcon = '';
-    this.twitterIcon = '';
+    this.facebookIcon = '../../../assets/img/socialMedia/facebookIcon.png';
+    this.instagramIcon = '../../../assets/img/socialMedia/instagramIcon.png';
+    this.whatsappIcon = '../../../assets/img/socialMedia/whatsappIcon.png';
+    this.twitterIcon = '../../../assets/img/socialMedia/twitterIcon.png';
    }
 
   ngOnInit(): void {

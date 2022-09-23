@@ -1,0 +1,32 @@
+.footer {
+  background-color: #2f2f2f;
+}
+
+.line {
+  margin: 10px 0 20px 0;
+  border: 1px solid  white;
+  border-radius: 10px;
+}
+
+.socialMediaTitle {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+.sectionFooter p{
+  color: #808080;
+}
+
+.sectionFooter p:hover{
+  color: white;
+}
+
+.socialMediaIcons img {
+  width: 40px;
+}
+
+.socialMediaIcons a :hover {
+  border-radius: 30px;
+  border: #808080 2px solid;
+}
