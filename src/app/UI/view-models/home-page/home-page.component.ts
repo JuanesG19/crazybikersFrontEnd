@@ -7,9 +7,43 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() { }
+  imageSrc = "";
+
+  imageBike = "";
+
+  images = [
+    {imageSrc: '../../../assets/img/bikes/bike1.png'},
+    {imageSrc: '../../../assets/img/bikes/bike2.png'},
+    {imageSrc: '../../../assets/img/bikes/bike3.png'},
+    {imageSrc: '../../../assets/img/bikes/bike4.png'},
+    {imageSrc: '../../../assets/img/bikes/bike5.png'},
+    {imageSrc: '../../../assets/img/bikes/bike6.png'},
+    {imageSrc: '../../../assets/img/bikes/bike7.png'},
+    {imageSrc: '../../../assets/img/bikes/bike8.png'}
+  ];
+
+  banner1: string;
+  banner2: string;
+  banner3: string;
+  banner4: string;
+  banner5: string;
+
+  constructor() { 
+
+    this.banner1 = '../../../assets/img/banner/banner1.jpg';
+    this.banner2 = '../../../assets/img/banner/banner2.jpg';
+    this.banner3 = '../../../assets/img/banner/banner3.png';
+    this.banner4 = '../../../assets/img/banner/banner4.jpg';
+    this.banner5 = '../../../assets/img/banner/banner5.jpg';
+  }
 
   ngOnInit(): void {
+    this.selectImage();
+  }
+
+  selectImage(): void{
+    var slider:any =<HTMLInputElement> document.getElementById('slider');
+    this.imageBike = this.images[slider.value-1].imageSrc;
   }
 
 }

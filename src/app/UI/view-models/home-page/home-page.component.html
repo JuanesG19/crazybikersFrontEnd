@@ -1,1 +1,84 @@
-<p>home-page works!</p>
+<div class="homepage">
+  <div class="slider">
+    <div
+      id="carouselExampleControls"
+      class="carousel slide sliderBanners"
+      data-bs-ride="carousel"
+    >
+      <div class="slogan"><p>CRAZY BIKERS</p></div>
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            [src]="banner2"
+            class="d-block w-100"
+            alt="Cinematic Motorcycle B-Roll"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            [src]="banner4"
+            class="d-block w-100"
+            alt="Cinematic Motorcycle B-Roll"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            [src]="banner3"
+            class="d-block w-100"
+            alt="Cinematic Motorcycle B-Roll"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container pt-5 pb-5 superSportSection">
+    <div class="row">
+      <div class="col-sm-6 col-md-7 superSportImg">
+        <input
+          type="range"
+          class="form-range"
+          min="1"
+          max="8"
+          step="1"
+          value="1"
+          id="slider"
+          (change)="selectImage()"
+        />
+        <img [src]="imageBike" alt="Super Bike" />
+      </div>
+      <div class="col-sm-5 col-md-5 superSportInfo">
+        <div class="superSportDescription">
+          <h3 class="descriptionTitle">
+            <a style="color: #2f2f2f">M</a>otos
+            <a style="color: #2f2f2f">S</a>uper
+            <a style="color: #2f2f2f">S</a>port
+          </h3>
+          <p class="descriptionInformation pb-2">
+            ¡La especialidad de la casa! Las motos super sport. Todas nuestras
+            motos Honda las encuentras en un solo lugar con la tecnología y
+            diseño del fabricante número 1 de motos en el mundo.
+          </p>
+          <a class="linkSuperSport">Ver Categoria Super Sport</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
